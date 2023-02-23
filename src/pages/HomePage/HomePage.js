@@ -18,7 +18,7 @@ export default function HomePage() {
             <Container>
                 {produtos.map((itens, index) => {
                     return (
-                        <Product itens={itens} key={index} />
+                        <Product itens={itens}  key={index} />
                     )
                 })}
                 <Carrinho/>
