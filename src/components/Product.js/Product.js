@@ -6,9 +6,9 @@ import { GlobalContext } from "../../contexts/GlobalContext"
 export default function Product({ itens }) {
     // console.log(itens)
     const context = useContext(GlobalContext)
-    const { produtos, carrinho, setCarrinho } = context
+    const { carrinho, setCarrinho, soma, setSoma } = context
 
-
+   
 
     const adicionaCarrinho = (itens) => {
         let copiaCarrinho = [...carrinho]
@@ -18,18 +18,19 @@ export default function Product({ itens }) {
 
         if (verificacao === undefined) {
             copiaCarrinho.push(itens)
-            console.log(copiaCarrinho)
+            setSoma(soma + itens.custo)
             setCarrinho(copiaCarrinho)
         } else {
             for (let i in copiaCarrinho) {
                 if (copiaCarrinho[i].nome === itens.nome) {
                     copiaCarrinho[i].qt = copiaCarrinho[i].qt + 1
-                    console.log(copiaCarrinho)
                     setCarrinho(copiaCarrinho)
+                    setSoma(soma + copiaCarrinho[i].custo)
                 }
             }
         }
     }
+
 
 
     return (
