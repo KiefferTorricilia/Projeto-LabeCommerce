@@ -6,6 +6,8 @@ width: 17vw;
 height: 50vh;
 border: black 1px solid;
 display: flex;
+gap: 10px;
+flex-direction: column;
 flex-wrap: wrap;
 `
 
@@ -22,7 +24,6 @@ display: flex;
 justify-content: space-around;
 position: relative;
 left: 0.5vw;
-bottom: 18vh;
 `
 
 export const BotaoRemover = styled.button`
