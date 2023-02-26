@@ -6,6 +6,9 @@ const GlobalState = (props) => {
     const [carrinho, setCarrinho] = useState([])
     const [detalhes, setDetalhes] = useState([])
     const [soma, setSoma] = useState(0)
+    const [nome, setNome] = useState("")
+    const [minimo, setMinimo] = useState(0)
+    const [maximo, setMaximo] = useState(0)
 
     const produtos =  [
     {
@@ -39,7 +42,7 @@ const GlobalState = (props) => {
         custo: 2000000,
         imageUrl: "https://www.egames.news/__export/1645388725763/sites/debate/img/2022/02/20/portal.jpeg_423682103.jpeg",
         qt: 1 ,
-    }
+    },
 ]
 
 
@@ -51,6 +54,12 @@ const GlobalState = (props) => {
         setDetalhes,
         soma,
         setSoma,
+        nome,
+        setNome,
+        minimo,
+        setMinimo,
+        maximo,
+        setMaximo,
     }
 
     return (
