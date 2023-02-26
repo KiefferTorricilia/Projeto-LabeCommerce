@@ -8,7 +8,7 @@ const GlobalState = (props) => {
     const [soma, setSoma] = useState(0)
     const [nome, setNome] = useState("")
     const [minimo, setMinimo] = useState(0)
-    const [maximo, setMaximo] = useState(0)
+    const [maximo, setMaximo] = useState(5000000)
 
     const produtos =  [
     {

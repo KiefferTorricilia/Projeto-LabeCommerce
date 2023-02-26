@@ -42,9 +42,9 @@ export default function HomePage() {
                 .filter((element) => {
                     return element.custo >= minimo
                 })
-                // .filter((item) => {
-                //     return item.custo <= maximo
-                // })
+                .filter((item) => {
+                    return item.custo <= maximo
+                })
                 .map((itens, index) => {
                     return (
                         <Product itens={itens}  key={index} />
