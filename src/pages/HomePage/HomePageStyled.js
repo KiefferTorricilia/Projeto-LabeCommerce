@@ -57,3 +57,11 @@ width: 15vw;
 left: 35vw;
 bottom: 19vh;
 `
+
+export const FiltroOrdem = styled.select`
+width: 10vw;
+position: relative;
+left: 55vw;
+bottom: 25vh;
+
+`

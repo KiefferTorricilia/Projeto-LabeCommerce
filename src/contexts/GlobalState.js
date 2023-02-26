@@ -9,6 +9,7 @@ const GlobalState = (props) => {
     const [nome, setNome] = useState("")
     const [minimo, setMinimo] = useState(0)
     const [maximo, setMaximo] = useState(5000000)
+    const [ordem, setOrdem] = useState("")
 
     const produtos =  [
     {
@@ -60,6 +61,8 @@ const GlobalState = (props) => {
         setMinimo,
         maximo,
         setMaximo,
+        ordem,
+        setOrdem,
     }
 
     return (
