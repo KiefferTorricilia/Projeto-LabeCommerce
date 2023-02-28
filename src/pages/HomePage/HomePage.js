@@ -10,11 +10,7 @@ export default function HomePage() {
     const context = useContext(GlobalContext)
     const { produtos, nome, setNome, minimo, setMinimo, maximo, setMaximo, ordem, setOrdem } = context
 
-    // <select>
-    // <option value="">Ordenar</option>
-    // <option value="">Crescente</option>
-    // <option value="">Decrescente</option>
-    // </select>
+
 
     const onChangeNome = (e) => {
         setNome(e.target.value)
@@ -26,6 +22,9 @@ export default function HomePage() {
 
     const onChangeMaximo = (e) => {
         setMaximo(e.target.value)
+        if(maximo < 1000){
+            setMaximo(50000000)
+        }
     }
 
     const onChangeOrdem = (e) => {
