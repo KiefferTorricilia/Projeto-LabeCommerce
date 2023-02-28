@@ -6,10 +6,9 @@ const GlobalState = (props) => {
     const [carrinho, setCarrinho] = useState([])
     const [detalhes, setDetalhes] = useState([])
     const [soma, setSoma] = useState(0)
-    const [nome, setNome] = useState("")
-    const [minimo, setMinimo] = useState(0)
     const [maximo, setMaximo] = useState(5000000)
-    const [ordem, setOrdem] = useState("")
+
+    
 
     const produtos =  [
     {
@@ -55,14 +54,8 @@ const GlobalState = (props) => {
         setDetalhes,
         soma,
         setSoma,
-        nome,
-        setNome,
-        minimo,
-        setMinimo,
         maximo,
         setMaximo,
-        ordem,
-        setOrdem,
     }
 
     return (
